@@ -3226,7 +3226,7 @@
         <param name="visible_ratings">false</param>
         <definition>
             <control type="group">
-                <top>17</top>
+                <top>22</top>
                 <height>$PARAM[plotheight]</height>
                 <visible>$PARAM[details]</visible>
                 <include>$PARAM[details_include]</include>
@@ -3234,7 +3234,7 @@
                     <width>$PARAM[plotwidth]</width>
                     <label>$PARAM[plotlabel]</label>
                     <aligny>top</aligny>
-                    <textcolor>$PARAM[colordiffuse]_70</textcolor>
+                    <textcolor>$PARAM[colordiffuse]_100</textcolor>
                     <font>font_main_plot</font>
                     <include content="Object_Top" condition="Skin.HasSetting(Info.DisableDetailsLine)">
                         <param name="top">-40</param>
@@ -3251,7 +3251,7 @@
                     <width>$PARAM[plotwidth]</width>
                     <label>$PARAM[plotlabel]</label>
                     <aligny>top</aligny>
-                    <textcolor>$PARAM[colordiffuse]_70</textcolor>
+                    <textcolor>$PARAM[colordiffuse]_100</textcolor>
                     <font>font_main_plot</font>
                     <include content="Object_Top" condition="Skin.HasSetting(Info.DisableDetailsLine)">
                         <param name="top">-40</param>
@@ -3334,7 +3334,7 @@
                         <!-- <include content="Object_Top" condition="!Skin.HasSetting(TMDbHelper.EnableCrop)">
                             <param name="top">80</param>
                         </include> -->
-                        <top>0</top>
+                        <top>6</top>
                         <left>0</left>
                         <visible>$PARAM[details]</visible>
                         <include>$PARAM[details_include]</include>
