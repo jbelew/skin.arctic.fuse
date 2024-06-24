@@ -96,9 +96,11 @@
     </include>
 
     <include name="Info_Title_LogoLabel_SmallText">
+        <!--         
         <include content="Info_Title_LogoLabel_SmallText_KodiLogo">
             <param name="colordiffuse">$PARAM[colordiffuse]</param>
-        </include>
+        </include> 
+        -->
         <control type="label">
             <wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
             <height>84</height>
@@ -3234,10 +3236,10 @@
                     <width>$PARAM[plotwidth]</width>
                     <label>$PARAM[plotlabel]</label>
                     <aligny>top</aligny>
-                    <textcolor>$PARAM[colordiffuse]_100</textcolor>
+                    <textcolor>$PARAM[colordiffuse]_90</textcolor>
                     <font>font_main_plot</font>
                     <include content="Object_Top" condition="Skin.HasSetting(Info.DisableDetailsLine)">
-                        <param name="top">-40</param>
+                        <param name="top">-20</param>
                     </include>
                     <!-- <include content="Object_Bottom" condition="!Skin.HasSetting(TMDbHelper.EnableCrop)">
                         <param name="bottom">-80</param>
@@ -3251,10 +3253,10 @@
                     <width>$PARAM[plotwidth]</width>
                     <label>$PARAM[plotlabel]</label>
                     <aligny>top</aligny>
-                    <textcolor>$PARAM[colordiffuse]_100</textcolor>
+                    <textcolor>$PARAM[colordiffuse]_90</textcolor>
                     <font>font_main_plot</font>
                     <include content="Object_Top" condition="Skin.HasSetting(Info.DisableDetailsLine)">
-                        <param name="top">-40</param>
+                        <param name="top">-20</param>
                     </include>
                     <!-- <include content="Object_Bottom" condition="!Skin.HasSetting(TMDbHelper.EnableCrop)">
                         <param name="bottom">-120</param>
@@ -3290,7 +3292,7 @@
                     <param name="condition">![$PARAM[visible]]</param>
                 </include>
                 <control type="grouplist">
-                    <top>-20</top>
+                    <top>-64</top>
                     <hitrect x="0" y="0" w="0" h="0" />
                     <orientation>vertical</orientation>
                     <itemgap>0</itemgap>
@@ -3334,7 +3336,7 @@
                         <!-- <include content="Object_Top" condition="!Skin.HasSetting(TMDbHelper.EnableCrop)">
                             <param name="top">80</param>
                         </include> -->
-                        <top>6</top>
+                        <top>10</top>
                         <left>0</left>
                         <visible>$PARAM[details]</visible>
                         <include>$PARAM[details_include]</include>
