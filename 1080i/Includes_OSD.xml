@@ -661,18 +661,6 @@
                     <param name="textcolor">panel_fg_70</param>
                 </include>
 
-                <!-- Season / Episode -->
-                <!-- <include content="Info_Line_Item">
-                    <param name="label">$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,0,]</param>
-                    <param name="visible">VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.Episode) + Integer.IsLess(VideoPlayer.Episode,10)</param>
-                    <param name="textcolor">panel_fg_70</param>
-                </include>
-                <include content="Info_Line_Item">
-                    <param name="label">$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,,]</param>
-                    <param name="visible">VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.Episode) + !Integer.IsLess(VideoPlayer.Episode,10)</param>
-                    <param name="textcolor">panel_fg_70</param>
-                </include> -->
-
                 <!-- Year / Premiered -->
                 <include content="Info_Line_Item">
                     <param name="label">$INFO[VideoPlayer.Year]</param>
@@ -1532,7 +1520,7 @@
                             <height>80</height>
                             <label>$INFO[MusicPlayer.Artist]</label>
                             <textcolor>panel_fg_100</textcolor>
-                            <font>font_title_black</font>
+                            <font>font_title_midi</font>
                         </control>
                         <control type="label">
                             <label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title]</label>
@@ -1556,7 +1544,7 @@
                             <width>1080</width>
                             <label>$INFO[MusicPlayer.Artist]</label>
                             <textcolor>panel_fg_100</textcolor>
-                            <font>font_title_black</font>
+                            <font>font_title_midi</font>
                         </control>
                         <control type="label">
                             <width>1080</width>

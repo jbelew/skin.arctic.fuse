@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-    <include name="Info_Title_Label">
-        <param name="label">$VAR[Label_Title_Container]</param>
-        <param name="wrapmultiline">false</param>
-        <param name="visible">true</param>
-        <param name="width">info_plot_w</param>
-        <param name="height">100%</param>
-        <definition>
-            <control type="group">
-                <nested />
-                <width>$PARAM[width]</width>
-                <height>$PARAM[height]</height>
-                <control type="label">
-                    <wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
-                    <top>5</top>
-                    <bottom>5</bottom>
-                    <label>$PARAM[label]</label>
-                    <textcolor>$PARAM[colordiffuse]_100</textcolor>
-                    <font>font_title_black</font>
-                    <right>-40</right>
-                </control>
-            </control>
-        </definition>
-    </include>
-
     <include name="Info_Title_LogoLabel_LargeText">
         <control type="label">
             <wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
             <aligny>center</aligny>
             <label>$PARAM[label]</label>
             <textcolor>$PARAM[colordiffuse]_100</textcolor>
-            <font>font_info_single_black</font>
+            <font>font_title_huge</font>
         </control>
     </include>
 
@@ -107,7 +83,7 @@
             <aligny>center</aligny>
             <label>$PARAM[label]</label>
             <textcolor>$PARAM[colordiffuse]_100</textcolor>
-            <font>font_title_black</font>
+            <font>font_title_main</font>
         </control>
     </include>
 
@@ -180,12 +156,6 @@
                         <param name="height">132</param>
                         <param name="visible">True</param>
                     </include>
-                    <!-- <include content="Info_Title_Label" condition="!Skin.HasSetting(TMDbHelper.EnableCrop)">
-                        <param name="label">$PARAM[label]</param>
-                        <param name="colordiffuse">$PARAM[colordiffuse]</param>
-                        <param name="wrapmultiline">false</param>
-                        <param name="height">42</param>
-                    </include> -->
                     <!-- Other -->
                     <include content="Info_Title_Logo" condition="Skin.HasSetting(TMDbHelper.EnableCrop)">
                         <param name="label">$PARAM[label]</param>
@@ -1235,24 +1205,6 @@
                     <param name="visible">!String.IsEmpty($PARAM[container]ListItem.Album)</param>
                     <param name="textcolor">$PARAM[colordiffuse]_70</param>
                 </include>
-
-                <!-- Season / Episode -->
-                <!-- <include content="Info_Line_Items">
-                    <include content="Info_Line_Visible_01">
-                        <param name="container">$PARAM[container]</param>
-                        <param name="dbtype_01">episode</param>
-                    </include>
-                    <param name="items_04">true</param>
-                    <param name="label_01">$INFO[$PARAM[container]ListItem.Season,,x]$INFO[$PARAM[container]ListItem.Episode,0,]</param>
-                    <param name="label_02">$INFO[$PARAM[container]ListItem.Season,,x]$INFO[$PARAM[container]ListItem.Episode,,]</param>
-                    <param name="label_03">$INFO[Container(99950).ListItem.Season,,x]$INFO[Container(99950).ListItem.Episode,0,]</param>
-                    <param name="label_04">$INFO[Container(99950).ListItem.Season,,x]$INFO[Container(99950).ListItem.Episode,,]</param>
-                    <param name="visible_01">!String.IsEmpty($PARAM[container]ListItem.Episode) + Integer.IsLess($PARAM[container]ListItem.Episode,10)</param>
-                    <param name="visible_02">!String.IsEmpty($PARAM[container]ListItem.Episode)</param>
-                    <param name="visible_03">!String.IsEmpty(Container(99950).ListItem.Episode) + Integer.IsLess(Container(99950).ListItem.Episode,10)</param>
-                    <param name="visible_04">!String.IsEmpty(Container(99950).ListItem.Episode)</param>
-                    <param name="textcolor">$PARAM[colordiffuse]_70</param>
-                </include> -->
 
                 <!-- Year / Premiered -->
                 <include content="Info_Line_Items">
