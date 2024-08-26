@@ -3190,7 +3190,7 @@
         <param name="visible_ratings">false</param>
         <definition>
             <control type="group">
-                <top>24</top>
+                <top>22</top>
                 <height>$PARAM[plotheight]</height>
                 <visible>$PARAM[details]</visible>
                 <include>$PARAM[details_include]</include>
